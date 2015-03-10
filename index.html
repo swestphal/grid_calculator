@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gridcalculator 1.0 </title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <form>
+        <label for="breite_gesamt">Gesamtbreite des Containers</label>
+            <input type="text" name="breite_gesamt" id="breite_gesamt" >
+
+        <label for="anzahl_spalten">Anzahl der Spalten des Grids</label>
+            <input type="text" name="anzahl_spalten" id="anzahl_spalten">
+
+        <label for="margin">Abstand zwischen den Spalten</label>
+            <input type="text" name="margin" id="margin">
+
+        </br>
+
+        <input type="radio" id="fix" name="grid_auswahl" value="fix">
+            <label for="fix">Fixed Grid</label>
+
+        <input type="radio" id="fluid" name="grid_auswahl" value="fluid">
+            <label for="fluid">Fluid Grid</label>
+
+        <input type="button" value="berechnen" onClick="berechnen()">
+    </form>
+
+    <!--<div >
+        <span>Ihre Werte für das Grid mit der Spaltenbreite von jeweils&nbsp;</span><span id="spalten_breite">Ergebnis</span><span>&nbsp;px</span>
+    </div>-->
+
+    <div id="liste">
+        <p></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
